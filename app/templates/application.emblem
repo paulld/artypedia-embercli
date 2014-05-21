@@ -1,3 +1,27 @@
-h2 Welcome to Ember.js
+.navbar.navbar-default.navbar-fixed-top role="navigation"
+  .container
+    .navbar-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="#" Ember-CLI App
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li = link-to 'index' | Home
+        li = link-to 'works' | Artworks
+        li = link-to 'artists' | Artists
+        li = link-to 'about' | About Us
+        li = link-to 'credits' | Credits
 
-= outlet
+.container.main-content
+  = outlet
+
+#footer
+  .container
+    .row
+      .col-md-7
+        p.text-muted Ember.js App by PLD
+      .col-md-5
+        p.text-muted Today is #{time}

@@ -1,0 +1,15 @@
+h1 List of all Artworks
+ul.list-unstyled.col-md-8
+  each
+    li.row
+      .col-md-5
+        link-to 'works.work' id
+          img.img-thumbnail src=image alt=title
+      .col-md-7
+        h2 = title
+        p Artist:
+          = drawer.firstName
+          = drawer.lastName
+        p.product-description = type
+        link-to 'works.work' id tagName="button" classNames="btn btn-success"
+          | Buy for #{price}

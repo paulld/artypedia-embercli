@@ -1,1 +1,22 @@
-p Hello!
+h1 Welcome to our Website!
+.row
+  .col-md-5
+    h2 = link-to 'works' | Artworks
+    p There are <strong>#{totalWorks} artworks</strong> currently listed in our database.
+    p = link-to 'works' tagName="button" classNames="btn btn-primary" | See the #{totalWorks} Artworks 
+    p &nbsp;
+    h4 Most viewed Artworks:
+    ul
+      each workViewCount
+        li =link-to 'work' this | title"#{title}"
+          (#{workViewCount})
+    
+  .col-md-5
+    h2 = link-to 'artists' |Artists
+    p There are <strong>#{totalArtists} artists</strong> currently listedin our database.
+    p = link-to 'artists' tagName="button" classNames="btn btn-primary" | See the #{totalArtists} Artists
+    p &nbsp;
+    h4 Most viewed Artists:
+    ul
+      each artistViewCount
+        li #{name}
