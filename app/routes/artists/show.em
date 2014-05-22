@@ -2,7 +2,7 @@
 
 class ArtistIndexRoute extends Ember.Route
   model: (params) ->
-    Artist.FIXTURES.findBy('id', params.id)
     console.log params
+    Artist.FIXTURES.findBy('id', params.id)
 
 `export default ArtistIndexRoute`

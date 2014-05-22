@@ -1,8 +1,8 @@
-`import Artist from 'ember-cli/models/work'`
+`import Artist from 'ember-cli/models/artist'`
 
 class IndexRoute extends Ember.Route
   model: ->
-    console.log ">>>>> Runnning artists index route."
+    console.log ">>>>> Runnning Artists index route."
     Artist.FIXTURES
 
 `export default IndexRoute`

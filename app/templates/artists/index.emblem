@@ -1,9 +1,8 @@
 .row
-  p test
   .col-sm-2
     .list-group
       ul.nav.navbar-nav
         each
-          li.list-group-item = link-to 'artists.show' id | #{title}
+          li = link-to 'artists.show' id | #{firstName} #{lastName}
   .col-sm-10
     = outlet

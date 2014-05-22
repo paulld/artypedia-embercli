@@ -1,7 +1,7 @@
 `import Work from 'ember-cli/models/work'`
 
-class WorksNewRoute extends Ember.Route
+class WorkNewRoute extends Ember.Route
   model: ->
     new Work()
 
-`export default WorksNewRoute`
+`export default WorkNewRoute`

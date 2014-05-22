@@ -1,1 +1,6 @@
-p this is the WORKS / EDIT page
+p this is the EDIT page for #{title}
+p
+  link-to 'works.show' this | Back to #{title}
+  ' 
+  ' |
+  link-to 'works.index' | Back to all Artworks

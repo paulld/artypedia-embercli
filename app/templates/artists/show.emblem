@@ -1,1 +1,1 @@
-p this is the ARTISTS / ARTIST template
+h2 #{firstName} #{lastName}
