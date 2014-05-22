@@ -1,1 +1,29 @@
 h2 #{firstName} #{lastName}
+/ NB this row should be removed once encatenated inside outlet
+.row
+  .col-md-10
+    .row
+      .col-md.5
+        img.img-thumbnail src=image alt=name
+      .col-md-7
+        p.product-description <strong>Nationality:</strong> #{nationality}
+        p.product-description <strong>Born on:</strong> #{bornOn}
+        p.product-description <strong>Died on:</strong> #{diedOn}
+        p.product-description <strong>Description:</strong> #{description}
+      
+    / {{render 'artist.works' works}}
+    
+    .row
+      h2 Comments
+      .new-review
+        .col-md-5
+          / {{textarea valueBinding='text' id='comment-text-area' classNames='form-control' placeholder='Add a comment'}}
+        .col-md-2.form-group
+          <button {{action 'createComment'}} class='btn btn-primary'>Send</button>
+          
+    .row
+      ul
+        if text
+          li.new-comment-text #{text}
+
+      / = render 'artist.comments' comments

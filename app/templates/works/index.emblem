@@ -15,3 +15,4 @@ ul.list-unstyled.col-md-8
           = drawer.firstName
           = drawer.lastName
         p.product-description = type
+        p.product-description Price: #{price}
