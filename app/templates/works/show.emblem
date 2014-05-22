@@ -1,0 +1,14 @@
+h2 = title
+ul.list-unstyled.col-md-8
+  li.row
+    .col-md-5
+      img.img-thumbnail src="image" alt="title"
+    .col-md-7
+      h4 Artist:
+        link-to 'artist' drawer
+          ' drawer.firstName drawer.lastName
+      p.product-description <strong>Type:</strong> type
+      p.product-description <strong>Description:</strong> description
+      p
+        button.btn.btn-success Buy for #{price}
+        link-to "Back to list of Artworks" 'works'

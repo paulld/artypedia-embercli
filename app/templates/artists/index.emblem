@@ -1,1 +1,9 @@
-p this is the ARTISTS / INDEX template
+.row
+  p test
+  .col-sm-2
+    .list-group
+      ul.nav.navbar-nav
+        each
+          li.list-group-item = link-to 'artists.show' id | #{title}
+  .col-sm-10
+    = outlet

@@ -1,5 +1,5 @@
 class Artist extends DS.Model
-  id:              DS.attr 'number'
+  # id:              DS.attr 'number'
   firstName:       DS.attr 'string'
   lastName:        DS.attr 'string'
   nationality:     DS.attr 'string'
@@ -15,7 +15,7 @@ class Artist extends DS.Model
 Artist.reopenClass
   FIXTURES: [
     {
-      id: 100
+      id: '100'
       firstName: 'Pablo'
       lastName: 'Picasso'
       nationality: 'Spanish'
@@ -37,7 +37,7 @@ Artist.reopenClass
       works: [1,2,3]
     }
     {
-      id: 101
+      id: '101'
       firstName: 'Salvador'
       lastName: 'Dali'
       nationality: 'Spanish'
@@ -65,7 +65,7 @@ Artist.reopenClass
       works: [4,5,6]
     }
     {
-      id: 102
+      id: '102'
       firstName: 'Rene'
       lastName: 'Magritte'
       nationality: 'Belgian'
@@ -81,7 +81,7 @@ Artist.reopenClass
       works: [7,8]
     }
     {
-      id: 103
+      id: '103'
       firstName: 'Andy'
       lastName: 'Warhol'
       nationality: 'American'

@@ -1,5 +1,5 @@
 class Work extends DS.Model
-  id:            DS.attr 'number'
+  # id:            DS.attr 'number'
   title:         DS.attr 'string'
   price:         DS.attr 'number'
   type:          DS.attr 'string'
@@ -12,7 +12,7 @@ class Work extends DS.Model
 Work.reopenClass
   FIXTURES: [
     {
-      id: 1
+      id: '1'
       title: 'Guernica'
       price: 2000000
       type: 'Painting'
@@ -36,7 +36,7 @@ Work.reopenClass
       ratings: []
     }
     {
-      id: 2
+      id: '2'
       title: 'Les Demoiselles d\'Avignon'
       price: 300000000
       type: 'Painting'
@@ -53,7 +53,7 @@ Work.reopenClass
       ratings: [2]
     }
     {
-      id: 3
+      id: '3'
       title: 'Blue Nude'
       price: 1000000
       type: 'Painting'
@@ -78,7 +78,7 @@ Work.reopenClass
       ratings: [1]
     }
     {
-      id: 4
+      id: '4'
       title: 'Le Grand Masturbateur'
       price: 20000000
       type: 'Painting'
@@ -94,7 +94,7 @@ Work.reopenClass
       drawer: 101
     }
     {
-      id: 5
+      id: '5'
       title: 'Profile of Time'
       price: 20000000
       type: 'Sculpture'
@@ -111,7 +111,7 @@ Work.reopenClass
       ratings: [1,5]
     }
     {
-      id: 6
+      id: '6'
       title: 'La Persistence de la Mémoire'
       price: 45000000
       type: 'Painting'
@@ -128,7 +128,7 @@ Work.reopenClass
       ratings: [5,5,4]
     }
     {
-      id: 7
+      id: '7'
       title: 'The Treachery of Images'
       price: 55000000
       type: 'Painting'
@@ -145,7 +145,7 @@ Work.reopenClass
       ratings: [3,4,2]
     }
     {
-      id: 8
+      id: '8'
       title: 'Le Fils de l\'Homme'
       price: 65000000
       type: 'Painting'

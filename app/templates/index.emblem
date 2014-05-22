@@ -12,7 +12,7 @@ h1 Welcome to our Website!
           (#{workViewCount})
     
   .col-md-5
-    h2 = link-to 'artists' |Artists
+    h2 = link-to 'artists' | Artists
     p There are <strong>#{totalArtists} artists</strong> currently listedin our database.
     p = link-to 'artists' tagName="button" classNames="btn btn-primary" | See the #{totalArtists} Artists
     p &nbsp;
