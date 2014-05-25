@@ -1,5 +1,5 @@
 class Work extends DS.Model
-  # id:            DS.attr 'number'
+  workId:        DS.attr 'string'
   title:         DS.attr 'string'
   price:         DS.attr 'number'
   type:          DS.attr 'string'
@@ -7,12 +7,12 @@ class Work extends DS.Model
   isOnSale:      DS.attr 'boolean'
   workViewCount: DS.attr 'number'
   image:         DS.attr 'string'
-  drawer:        DS.belongsTo 'artist', async: true
+  author:        DS.belongsTo 'artist', async: true
 
 Work.reopenClass
   FIXTURES: [
     {
-      id: '1'
+      workId: '1'
       title: 'Guernica'
       price: 2000000
       type: 'Painting'
@@ -32,11 +32,11 @@ Work.reopenClass
       isOnSale: false
       workViewCount: 10
       image: 'assets/images/picasso-guernica.jpg'
-      drawer: 100
+      author: 100
       ratings: []
     }
     {
-      id: '2'
+      workId: '2'
       title: 'Les Demoiselles d\'Avignon'
       price: 300000000
       type: 'Painting'
@@ -49,11 +49,11 @@ Work.reopenClass
       isOnSale: false
       workViewCount: 100
       image: 'assets/images/picasso-avignon.jpg'
-      drawer: 100
+      author: 100
       ratings: [2]
     }
     {
-      id: '3'
+      workId: '3'
       title: 'Blue Nude'
       price: 1000000
       type: 'Painting'
@@ -74,11 +74,11 @@ Work.reopenClass
       isOnSale: false
       workViewCount: 1
       image: 'assets/images/picasso-blue-nude.jpg'
-      drawer: 100
+      author: 100
       ratings: [1]
     }
     {
-      id: '4'
+      workId: '4'
       title: 'Le Grand Masturbateur'
       price: 20000000
       type: 'Painting'
@@ -91,10 +91,10 @@ Work.reopenClass
       isOnSale: true
       workViewCount: 5
       image: 'assets/images/dali-grand-masturbateur.png'
-      drawer: 101
+      author: 101
     }
     {
-      id: '5'
+      workId: '5'
       title: 'Profile of Time'
       price: 20000000
       type: 'Sculpture'
@@ -107,11 +107,11 @@ Work.reopenClass
       isOnSale: false
       workViewCount: 8
       image: 'assets/images/dali-profile-of-time.jpg'
-      drawer: 101
+      author: 101
       ratings: [1,5]
     }
     {
-      id: '6'
+      workId: '6'
       title: 'La Persistence de la Mémoire'
       price: 45000000
       type: 'Painting'
@@ -124,11 +124,11 @@ Work.reopenClass
       isOnSale: true
       workViewCount: 108
       image: 'assets/images/dali-persistance-memoire.jpg'
-      drawer: 101
+      author: 101
       ratings: [5,5,4]
     }
     {
-      id: '7'
+      workId: '7'
       title: 'The Treachery of Images'
       price: 55000000
       type: 'Painting'
@@ -141,11 +141,11 @@ Work.reopenClass
       isOnSale: true
       workViewCount: 95
       image: 'assets/images/magritte-trahison-images.jpg'
-      drawer: 102
+      author: 102
       ratings: [3,4,2]
     }
     {
-      id: '8'
+      workId: '8'
       title: 'Le Fils de l\'Homme'
       price: 65000000
       type: 'Painting'
@@ -158,7 +158,7 @@ Work.reopenClass
       isOnSale: true
       workViewCount: 118
       image: 'assets/images/magritte-fils-homme.jpg'
-      drawer: 102
+      author: 102
       ratings: []
     }
   ]

@@ -1,7 +1,7 @@
 `import Work from 'ember-cli/models/work'`
 
-class WorkIndexRoute extends Ember.Route
+class WorksShowRoute extends Ember.Route
   model: (params) ->
-    Work.FIXTURES.findBy('id', params.id)
+    Work.FIXTURES.findBy('workId', params.workId)
 
-`export default WorkIndexRoute`
+`export default WorksShowRoute`

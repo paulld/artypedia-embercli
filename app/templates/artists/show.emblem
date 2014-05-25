@@ -1,8 +1,8 @@
-h2 #{firstName} #{lastName}
-/ NB this row should be removed once encatenated inside outlet
 .row
+  .col-sm-2 {{partial "artists/list"}}
   .col-md-10
     .row
+      h2 #{firstName} #{lastName}
       .col-md.5
         img.img-thumbnail src=image alt=name
       .col-md-7
@@ -10,8 +10,10 @@ h2 #{firstName} #{lastName}
         p.product-description <strong>Born on:</strong> #{bornOn}
         p.product-description <strong>Died on:</strong> #{diedOn}
         p.product-description <strong>Description:</strong> #{description}
+        p
+          link-to 'artists.edit' this | Edit
       
-    / {{render 'artist.works' works}}
+    / = render 'artist.works' works
     
     .row
       h2 Comments

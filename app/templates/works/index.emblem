@@ -1,18 +1,18 @@
+h1
+  | List of all Artworks
+  '
+  '
+  = link-to 'works.new' tagName="button" classNames="btn btn-success" | Register a New Artwork
 .row
-  .col-md-5
-    h1 List of all Artworks
-  .col-md-7
-    link-to 'works.new' tagName="button" classNames="btn btn-success" | Create New Artwork
-ul.list-unstyled.col-md-8
-  each
-    li.row
-      .col-md-5
-        link-to 'works.show' id
-          img.img-thumbnail src=image alt=title
-      .col-md-7
-        h2 = link-to 'works.show' id | #{title}
-        p Artist:
-          = drawer.firstName
-          = drawer.lastName
-        p.product-description = type
-        p.product-description Price: #{price}
+  ul.list-unstyled.col-md-8
+    each
+      p #{workId}
+      li.row
+        .col-md-5
+          link-to 'works.show' workId
+            img.img-thumbnail src=image alt=title
+        .col-md-7
+          h2 = link-to 'works.show' workId | #{title}
+          p Artist: #{author} #{author.firstName} #{author.lastName}
+          p.product-description Type: #{type}
+          p.product-description Price: #{price}

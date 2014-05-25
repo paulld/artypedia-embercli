@@ -2,6 +2,7 @@
 
 class IndexRoute extends Ember.Route
   model: ->
+    console.log Work.FIXTURES
     console.log ">>>>> Runnning works index route."
     Work.FIXTURES
 

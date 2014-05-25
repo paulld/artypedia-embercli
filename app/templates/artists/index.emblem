@@ -3,6 +3,6 @@
     .list-group
       ul.nav.navbar-nav
         each
-          li = link-to 'artists.show' id | #{firstName} #{lastName}
+          li = link-to 'artists.show' artistId | #{firstName} #{lastName}
   .col-sm-10
-    = outlet
+    link-to 'artists.new' tagName="button" classNames="btn btn-success" | Register a New Artist

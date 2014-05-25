@@ -1,1 +1,6 @@
-p this is the ARTISTS / EDIT template
+p this is the EDIT page for #{firstName} #{lastName}
+p
+  link-to 'artists.show' this | Back to #{firstName} #{lastName}
+  ' 
+  ' |
+  link-to 'artists.index' | Back to all Artworks

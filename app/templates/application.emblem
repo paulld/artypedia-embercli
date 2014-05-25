@@ -22,6 +22,6 @@
   .container
     .row
       .col-md-7
-        p.text-muted Ember.js App by PLD
+        p.text-muted Ember-CLI App by PLD
       .col-md-5
         p.text-muted Today is #{time}

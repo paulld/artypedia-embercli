@@ -1,1 +1,6 @@
-p this is the ARTISTS / NEW template
+.row
+  .col-sm-2 {{partial "artists/list"}}
+  .col-sm-10
+    p Register a new Artist
+    p
+      link-to 'artists.index' | Back to all Artists

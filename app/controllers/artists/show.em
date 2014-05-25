@@ -1,6 +1,6 @@
 class ArtistsShowController extends Ember.ObjectController
   # text: ''
-  # actions: {
+  # actions:
   #   createComment: ->
   #     comment = @store.createRecord('comment',
   #       text: @get('text')
@@ -12,6 +12,5 @@ class ArtistsShowController extends Ember.ObjectController
   #       controller.set('text', '')
   #       controller.get('model.comments').addObject(comment)
   #     )
-  # }
 
 `export default ArtistsShowController`

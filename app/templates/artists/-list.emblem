@@ -1,0 +1,6 @@
+.list-group
+  ul.nav.navbar-nav
+    li this is a the partial located in artists/_list.emblem
+    li it should show the list of all artists
+    / each
+    /   li = link-to 'artists.show' artistId | #{firstName} #{lastName}
