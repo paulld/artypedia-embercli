@@ -3,7 +3,7 @@ class Artist extends DS.Model
   firstName:       DS.attr 'string'
   lastName:        DS.attr 'string'
   nationality:     DS.attr 'string'
-  bornOn:          DS.attr 'string'
+  bornOn:          DS.attr 'date'
   isDead:          DS.attr 'boolean'
   diedOn:          DS.attr 'string'
   description:     DS.attr 'string'
@@ -11,6 +11,7 @@ class Artist extends DS.Model
   artistViewCount: DS.attr 'boolean'
   works:           DS.hasMany 'work', async: true
   comments:        DS.hasMany 'comment', async: true
+  fullName: '% %'.fmt('lud', 'paul')
 
 Artist.reopenClass
   FIXTURES: [
@@ -19,7 +20,7 @@ Artist.reopenClass
       firstName: 'Pablo'
       lastName: 'Picasso'
       nationality: 'Spanish'
-      bornOn: '25 October 1881'
+      bornOn: '25/10/1881'
       isDead: true
       diedOn: '8 April 1973 (aged 91)'
       description: 'Pablo Ruiz y Picasso, also known as Pablo Picasso, was a

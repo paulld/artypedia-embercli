@@ -1,0 +1,8 @@
+.row
+  .col-sm-2
+    .list-group
+      ul.nav.navbar-nav
+        each
+          li = link-to 'artists.show' artistId | #{firstName} #{lastName}
+  .col-sm-10
+    = outlet

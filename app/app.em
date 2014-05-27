@@ -4,7 +4,7 @@
 Ember.MODEL_FACTORY_INJECTIONS = true
 
 class App extends Ember.Application
-  modulePrefix: 'ember-cli'
+  modulePrefix: 'ember-cli' # TODO: loaded via config
   Resolver: Resolver
 
 loadInitializers(App, 'ember-cli')

@@ -16,3 +16,4 @@ h1
           p Artist: #{author} #{author.firstName} #{author.lastName}
           p.product-description Type: #{type}
           p.product-description Price: #{price}
+          p.product-description Price: #{formattedPrice}
