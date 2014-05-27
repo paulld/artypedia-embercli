@@ -1,4 +1,5 @@
 class ArtistsShowController extends Ember.ObjectController
+
   # text: ''
   # actions:
   #   createComment: ->

@@ -10,7 +10,6 @@ class Artist extends DS.Model
   artistViewCount: DS.attr 'boolean'
   works:           DS.hasMany 'work', async: true
   comments:        DS.hasMany 'comment', async: true
-  fullName: '% %'.fmt('lud', 'paul')
 
 Artist.reopenClass
   FIXTURES: [
