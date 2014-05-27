@@ -1,3 +1,4 @@
+p &nbsp;
 p Register a new Artist
-p
-  link-to 'artists.index' | Back to all Artists
+/ p
+/   link-to 'artists.index' | Back to all Artists

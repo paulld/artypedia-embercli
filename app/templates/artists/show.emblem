@@ -1,14 +1,15 @@
 .row
-  .col-md-4
-    h2 #{firstName} #{lastName}
-    
-  .col-md-5
-    p.edit-artist
-      link-to 'artists.edit' this | Edit
+  .col-md-12
+    h2 
+      | #{firstName} #{lastName}
+      '
+      '
+      = link-to 'artists.edit' this tagName="button" classNames="btn btn-info btn-margin-left30" | Edit
+    p &nbsp;
 .row
   .col-md-3
     img.img-thumbnail src=image alt=name
-  .col-md-5
+  .col-md-6
     p.product-description <strong>Nationality:</strong> #{nationality}
     p.product-description <strong>Born on:</strong> #{bornOn}
     p.product-description <strong>Died on:</strong> #{diedOn}
@@ -17,12 +18,13 @@
 / = render 'artist.works' works
 
 .row
-  h2 Comments
-  .new-review
-    .col-md-5
-      / {{textarea valueBinding='text' id='comment-text-area' classNames='form-control' placeholder='Add a comment'}}
-    .col-md-2.form-group
-      <button {{action 'createComment'}} class='btn btn-primary'>Send</button>
+  h2.col-md-12 Comments
+.row.new-review
+  .col-md-5
+    / {{textarea valueBinding='text' id='comment-text-area' classNames='form-control' placeholder='Add a comment'}}
+    / <textarea #{valueBinding 'text'} id='comment-text-area' classNames='form-control' placeholder='Add a comment'>
+  .col-md-2.form-group
+      <button #{action 'createComment'} class='btn btn-primary'>Send</button>
       
 .row
   ul

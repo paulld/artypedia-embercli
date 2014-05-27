@@ -2,11 +2,10 @@ h1
   | List of all Artworks
   '
   '
-  = link-to 'works.new' tagName="button" classNames="btn btn-success" | Register a New Artwork
+  = link-to 'works.new' tagName="button" classNames="btn btn-success btn-margin-left30" | Register a New Artwork
 .row
   ul.list-unstyled.col-md-8
     each
-      p #{workId}
       li.row
         .col-md-5
           link-to 'works.show' workId

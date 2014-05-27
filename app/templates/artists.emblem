@@ -2,6 +2,7 @@
   .col-sm-2
     .list-group
       ul.nav.navbar-nav
+        link-to 'artists.new' tagName="button" classNames="btn btn-success btn-margin-top10-bottom10" | Register a New Artist
         each
           li = link-to 'artists.show' artistId | #{firstName} #{lastName}
   .col-sm-10

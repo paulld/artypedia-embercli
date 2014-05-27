@@ -1,1 +1,3 @@
-link-to 'artists.new' tagName="button" classNames="btn btn-success" | Register a New Artist
+p &nbsp;
+/ p This is the artists/index page
+/ link-to 'artists.new' tagName="button" classNames="btn btn-success" | Register a New Artist
