@@ -2,6 +2,6 @@
 
 class WorksOnsaleRoute extends Ember.Route
   model: ->
-    @store.filter('work', { 'isOnSale': true })
+    @store.filterBy('isOnSale')
 
 `export default WorksOnsaleRoute`

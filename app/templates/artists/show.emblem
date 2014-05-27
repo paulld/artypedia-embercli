@@ -17,7 +17,6 @@
   
 / = render 'artist.works' works
 
-
 / .row
 /   h2 Main Artworks
 /   ul
