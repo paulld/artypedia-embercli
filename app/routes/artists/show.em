@@ -3,6 +3,6 @@
 class ArtistShowRoute extends Ember.Route
   model: (params) ->
     console.log params
-    Artist.FIXTURES.findBy('artistId', params.artistId)
+    Artist.FIXTURES.findBy('id', params.id)
 
 `export default ArtistShowRoute`

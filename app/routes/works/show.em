@@ -2,6 +2,6 @@
 
 class WorksShowRoute extends Ember.Route
   model: (params) ->
-    Work.FIXTURES.findBy('workId', params.workId)
+    Work.FIXTURES.findBy('id', params.id)
 
 `export default WorksShowRoute`

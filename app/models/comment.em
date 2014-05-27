@@ -1,5 +1,4 @@
 class Comment extends DS.Model
-  commentId:          DS.attr 'number'
   text:        DS.attr 'string'
   commentedAt: DS.attr 'date'
   artist:      DS.belongsTo 'artist'
@@ -7,22 +6,22 @@ class Comment extends DS.Model
 Comment.reopenClass
   FIXTURES: [
     {
-      commentId: '200'
+      id: '200'
       artist: 1
       text: 'Great artist!'
     }
     {
-      commentId: '201'
+      id: '201'
       artist: 1
       text: 'I love him too!'
     }
     {
-      commentId: '202'
+      id: '202'
       artist: 2
       text: 'I\'ve seen everything he did!'
     }
     {
-      commentId: '203'
+      id: '203'
       artist: 4
       text: 'I have 2 of his paintings in my bathroom'
     }

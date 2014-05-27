@@ -8,15 +8,15 @@ Router.map ->
   
   @resource 'works', ->
     @route "index",  { path: ''         }
-    @route "show",   { path: ':workId'      }
+    @route "show",   { path: ':id'      }
     @route "new",    { path: 'new'      }
-    @route "edit",   { path: ':workId/edit' }
+    @route "edit",   { path: ':id/edit' }
     # @route "onsale", { path: ':onsale'  }
   
   @resource 'artists', ->
     @route "index",  { path: ''         }
-    @route "show",   { path: ':artistId'      }
+    @route "show",   { path: ':id'      }
     @route "new",    { path: 'new'      }
-    @route "edit",   { path: ':artistId/edit' }
+    @route "edit",   { path: ':id/edit' }
 
 `export default Router`

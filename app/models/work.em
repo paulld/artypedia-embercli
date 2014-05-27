@@ -1,5 +1,4 @@
 class Work extends DS.Model
-  workId:        DS.attr 'string'
   title:         DS.attr 'string'
   price:         DS.attr 'number'
   type:          DS.attr 'string'
@@ -14,7 +13,7 @@ class Work extends DS.Model
 Work.reopenClass
   FIXTURES: [
     {
-      workId: '1'
+      id: '1'
       title: 'Guernica'
       price: 2000000
       type: 'Painting'
@@ -38,7 +37,7 @@ Work.reopenClass
       ratings: []
     }
     {
-      workId: '2'
+      id: '2'
       title: 'Les Demoiselles d\'Avignon'
       price: 300000000
       type: 'Painting'
@@ -55,7 +54,7 @@ Work.reopenClass
       ratings: [2]
     }
     {
-      workId: '3'
+      id: '3'
       title: 'Blue Nude'
       price: 1000000
       type: 'Painting'
@@ -80,7 +79,7 @@ Work.reopenClass
       ratings: [1]
     }
     {
-      workId: '4'
+      id: '4'
       title: 'Le Grand Masturbateur'
       price: 20000000
       type: 'Painting'
@@ -96,7 +95,7 @@ Work.reopenClass
       author: 101
     }
     {
-      workId: '5'
+      id: '5'
       title: 'Profile of Time'
       price: 20000000
       type: 'Sculpture'
@@ -113,7 +112,7 @@ Work.reopenClass
       ratings: [1,5]
     }
     {
-      workId: '6'
+      id: '6'
       title: 'La Persistence de la Mémoire'
       price: 45000000
       type: 'Painting'
@@ -130,7 +129,7 @@ Work.reopenClass
       ratings: [5,5,4]
     }
     {
-      workId: '7'
+      id: '7'
       title: 'The Treachery of Images'
       price: 55000000
       type: 'Painting'
@@ -147,7 +146,7 @@ Work.reopenClass
       ratings: [3,4,2]
     }
     {
-      workId: '8'
+      id: '8'
       title: 'Le Fils de l\'Homme'
       price: 65000000
       type: 'Painting'

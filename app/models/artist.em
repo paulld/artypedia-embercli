@@ -1,5 +1,4 @@
 class Artist extends DS.Model
-  artistId:        DS.attr 'string'
   firstName:       DS.attr 'string'
   lastName:        DS.attr 'string'
   nationality:     DS.attr 'string'
@@ -16,7 +15,7 @@ class Artist extends DS.Model
 Artist.reopenClass
   FIXTURES: [
     {
-      artistId: '100'
+      id: '100'
       firstName: 'Pablo'
       lastName: 'Picasso'
       nationality: 'Spanish'
@@ -28,7 +27,7 @@ Artist.reopenClass
       playwright who spent most of his adult life in France. As one of the
       greatest and most influential artists of the 20th century, he is known for
       co-founding the Cubist movement, the invention of constructed sculpture, the
-      co-invention of collage, and for the wartistIde variety of styles that he helped
+      co-invention of collage, and for the wide variety of styles that he helped
       develop and explore. \n Among his most famous works are the proto-Cubist Les
       Demoiselles d\'Avignon (1907), and Guernica (1937), a portrayal of the
       German bombing of Guernica during the Spanish Civil War.'
@@ -38,7 +37,7 @@ Artist.reopenClass
       works: [1,2,3]
     }
     {
-      artistId: '101'
+      id: '101'
       firstName: 'Salvador'
       lastName: 'Dali'
       nationality: 'Spanish'
@@ -66,7 +65,7 @@ Artist.reopenClass
       works: [4,5,6]
     }
     {
-      artistId: '102'
+      id: '102'
       firstName: 'Rene'
       lastName: 'Magritte'
       nationality: 'Belgian'
@@ -82,7 +81,7 @@ Artist.reopenClass
       works: [7,8]
     }
     {
-      artistId: '103'
+      id: '103'
       firstName: 'Andy'
       lastName: 'Warhol'
       nationality: 'American'
