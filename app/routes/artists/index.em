@@ -2,7 +2,6 @@
 
 class ArtistIndexRoute extends Ember.Route
   model: ->
-    console.log ">>>>> Runnning Artists index route."
-    Artist.FIXTURES
+    @store.find(Artist)
 
 `export default ArtistIndexRoute`

@@ -12,7 +12,7 @@ h1
             img.img-thumbnail src=image alt=title
         .col-md-7
           h2 = link-to 'works.show' id | #{title}
-          p Artist: #{author} #{author.firstName} #{author.lastName}
+          p Artist: #{author.firstName} #{author.lastName}
           p.product-description Type: #{type}
           p.product-description Price: #{price}
-          p.product-description Price: #{formattedPrice}
+          / p.product-description Price: #{formattedPrice}

@@ -7,8 +7,8 @@ class Work extends DS.Model
   workViewCount: DS.attr 'number'
   image:         DS.attr 'string'
   author:        DS.belongsTo 'artist', async: true
-  formattedPrice: ~>
-    parseFloat(price, 10).toFixed(2)
+  # formattedPrice: ~>
+  #   parseFloat(price, 10).toFixed(2)
 
 Work.reopenClass
   FIXTURES: [

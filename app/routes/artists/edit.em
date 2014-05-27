@@ -2,6 +2,6 @@
 
 class ArtistsEditRoute extends Ember.Route
   model: (params) ->
-    Artist.FIXTURES.findBy('id', params.id)
+    @store.find(Artist, params.id)
 
 `export default ArtistsEditRoute`

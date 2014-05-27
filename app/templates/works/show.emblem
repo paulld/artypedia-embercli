@@ -4,10 +4,11 @@ ul.list-unstyled.col-md-8
     .col-md-5
       img.img-thumbnail src=image alt=title
     .col-md-7
-      h4 Artist: = link-to 'artist.show' | #{author.firstName} #{author.lastName}
+      h4 
+        | Artist: 
+        link-to 'artists.show' | #{author.firstName} #{author.lastName}
       p.product-description <strong>Type:</strong> #{type}
       p.product-description <strong>Description:</strong> #{description}
-      p #{author}
       p
         link-to 'works.index' | Back to all Artworks
         ' 

@@ -2,6 +2,6 @@
 
 class IndexRoute extends Ember.Route
   model: ->
-    Artist.FIXTURES
+    @store.find(Artist)
 
 `export default IndexRoute`

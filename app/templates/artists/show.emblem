@@ -17,6 +17,16 @@
   
 / = render 'artist.works' works
 
+
+/ .row
+/   h2 Main Artworks
+/   ul
+/     each
+/       li link-to 'work' this #{title}
+/     else
+/       li
+/         p.text-muted <em>No artworks added yet. Be the first to add one for this artist!</em>
+
 .row
   h2.col-md-12 Comments
 .row.new-review
