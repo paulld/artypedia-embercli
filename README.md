@@ -10,15 +10,14 @@ It uses the following languages, in addition to JavaScript:
 
 ### Getting Started
 
-After cloning this repository, you should run the following commands:
+To clone this repository and make it work, you should run the following commands:
 ``` sh
 git clone https://github.com/paulld/ember-cli.git
 cd ember-cli
 npm install
 bower install
 ```
-Launch the server on :
+Launch the server on [localhost:4200](http://localhost:4200):
 ```
 ember server
 ```
-Accessible on [localhost:4200](http://localhost:4200)
