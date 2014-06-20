@@ -1,9 +1,10 @@
-.row
-  .col-sm-2
+.col-lg-2.col-md-2.col-sm-2.col-xs-3
+  aside#aside-left
     .list-group
       ul.nav.navbar-nav
         link-to 'artists.new' tagName="button" classNames="btn btn-success btn-margin-top10-bottom10" | Register a New Artist
         each
           li = link-to 'artists.show' id | #{firstName} #{lastName}
-  .col-sm-10
+.col-lg-10.col-md-10.col-sm-10.col-xs-9
+  main#main.main-content
     = outlet

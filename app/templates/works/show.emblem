@@ -1,16 +1,21 @@
-h2 = title
-ul.list-unstyled.col-md-8
-  li.row
-    .col-md-5
-      img.img-thumbnail src=image alt=title
-    .col-md-7
-      h4 
-        | Artist: 
-        link-to 'artists.show' | #{author.firstName} #{author.lastName}
-      p.product-description <strong>Type:</strong> #{type}
-      p.product-description <strong>Description:</strong> #{description}
-      p
-        link-to 'works.index' | Back to all Artworks
-        ' 
-        ' |
-        link-to 'works.edit' this | Edit
+.col-lg-2.col-md-2.col-sm-2.col-xs-3
+  aside#aside-left
+    p &nbsp;
+
+.col-lg-10.col-md-10.col-sm-10.col-xs-9
+  main#main.main-content
+    .row
+      .col-md-5
+        img.img-thumbnail src=image alt=title
+      .col-md-7
+        h2 = title
+        h4 
+          | Artist: 
+          link-to 'artists.show' | #{author.firstName} #{author.lastName}
+        p.product-description <strong>Type:</strong> #{type}
+        p.product-description <strong>Description:</strong> #{description}
+        p
+          link-to 'works.index' | Back to all Artworks
+          ' 
+          ' |
+          link-to 'works.edit' this | Edit

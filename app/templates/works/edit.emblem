@@ -1,6 +1,12 @@
-p this is the EDIT page for #{title}
-p
-  link-to 'works.show' this | Back to #{title}
-  ' 
-  ' |
-  link-to 'works.index' | Back to all Artworks
+.col-lg-2.col-md-2.col-sm-2.col-xs-3
+  aside#aside-left
+    p &nbsp;
+
+.col-lg-10.col-md-10.col-sm-10.col-xs-9
+  main#main.main-content
+  p this is the EDIT page for #{title}
+  p
+    link-to 'works.show' this | Back to #{title}
+    ' 
+    ' |
+    link-to 'works.index' | Back to all Artworks

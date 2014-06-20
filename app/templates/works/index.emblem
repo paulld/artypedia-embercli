@@ -1,18 +1,24 @@
-h1
-  | List of all Artworks
-  '
-  '
-  = link-to 'works.new' tagName="button" classNames="btn btn-success btn-margin-left30" | Register a New Artwork
-.row
-  ul.list-unstyled.col-md-8
-    each
-      li.row
-        .col-md-5
-          link-to 'works.show' id
-            img.img-thumbnail src=image alt=title
-        .col-md-7
-          h2 = link-to 'works.show' id | #{title}
-          p Artist: #{author.firstName} #{author.lastName}
-          p.product-description Type: #{type}
-          p.product-description Price: #{price}
-          / p.product-description Price: #{formattedPrice}
+.col-lg-2.col-md-2.col-sm-2.col-xs-3
+  aside#aside-left
+    p &nbsp;
+
+.col-lg-10.col-md-10.col-sm-10.col-xs-9
+  main#main.main-content
+    h1
+      | List of all Artworks
+      '
+      '
+      = link-to 'works.new' tagName="button" classNames="btn btn-success btn-margin-left30" | Register a New Artwork
+    .row
+      ul.list-unstyled.col-md-8
+        each
+          li.row
+            .col-md-5
+              link-to 'works.show' id
+                img.img-thumbnail src=image alt=title
+            .col-md-7
+              h2 = link-to 'works.show' id | #{title}
+              p Artist: #{author.firstName} #{author.lastName}
+              p.product-description Type: #{type}
+              p.product-description Price: #{price}
+              / p.product-description Price: #{formattedPrice}

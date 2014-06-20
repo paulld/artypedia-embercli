@@ -1,24 +1,29 @@
-h1 Welcome to Artypedia
-p This App was created using Ember-CLI
-p Languages used include EmberScript, Emblem and Stylus
-.row
-  .col-md-5
-    h2 = link-to 'works' | Artworks
-    p There are <strong>#{totalWorks} artworks</strong> currently listed in our database.
-    p = link-to 'works' tagName="button" classNames="btn btn-primary" | See the #{totalWorks} Artworks 
+.col-lg-2.col-md-2.col-sm-2.col-xs-3
+  aside#aside-left
     p &nbsp;
-    h4 Most viewed Artworks:
-    ul
-      each workViewCount
-        li =link-to 'work' this | title"#{title}"
-          (#{workViewCount})
-    
-  .col-md-5
-    h2 = link-to 'artists' | Artists
-    p There are <strong>#{totalArtists} artists</strong> currently listedin our database.
-    p = link-to 'artists' tagName="button" classNames="btn btn-primary" | See the #{totalArtists} Artists
-    p &nbsp;
-    h4 Most viewed Artists:
-    ul
-      each artistViewCount
-        li #{name}
+.col-lg-10.col-md-10.col-sm-10.col-xs-9
+  main#main.main-content
+    h1 Welcome to Artypedia
+    p This App was created using Ember-CLI
+    p Languages used include EmberScript, Emblem and Stylus
+    .row
+      .col-md-5
+        h2 = link-to 'works' | Artworks
+        p There are <strong>#{totalWorks} artworks</strong> currently listed in our database.
+        p = link-to 'works' tagName="button" classNames="btn btn-primary" | See the #{totalWorks} Artworks 
+        p &nbsp;
+        h4 Most viewed Artworks:
+        ul
+          each workViewCount
+            li =link-to 'work' this | title"#{title}"
+              (#{workViewCount})
+        
+      .col-md-5
+        h2 = link-to 'artists' | Artists
+        p There are <strong>#{totalArtists} artists</strong> currently listedin our database.
+        p = link-to 'artists' tagName="button" classNames="btn btn-primary" | See the #{totalArtists} Artists
+        p &nbsp;
+        h4 Most viewed Artists:
+        ul
+          each artistViewCount
+            li #{name}
