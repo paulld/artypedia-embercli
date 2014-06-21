@@ -1,8 +1,11 @@
-h1 List of all On Sale Artworks
-.row
-  ul.list-unstyled.col-md-8
+.fixed-column-top-left
+.fixed-column-left
+
+.container-fluid
+  .main-content
+    h1 List of all On Sale Artworks
     each
-      li.row
+      .row
         .col-md-5
           link-to 'works.show' id
             img.img-thumbnail src=image alt=title

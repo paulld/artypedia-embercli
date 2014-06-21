@@ -1,29 +1,20 @@
-.navbar.navbar-default.navbar-fixed-top role="navigation"
-  .container
-    .navbar-header
-      button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-collapse"
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand href="#" Artypedia
-    .collapse.navbar-collapse
-      ul.nav.navbar-nav
-        li = link-to 'index' | Home
-        li = link-to 'works' | Artworks
-        li = link-to 'artists' | Artists
-        li = link-to 'about' | About Us
-        li = link-to 'credits' | Credits
-      a href="https://github.com/paulld/artypedia-embercli.git"
-        img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
+.fixed-top-left
+  .grand-logo
+    img.artypedia-logo src="/assets/images/artypedia.png"
+.fixed-top-right
+  ul.nav.navbar-top
+    li = link-to 'index' class='navbar-link-top' | About
+    li = link-to 'artists' class='navbar-link-top' | Artists
+    li = link-to 'works' class='navbar-link-top' | Artworks
+    a href="https://github.com/paulld/artypedia-embercli.git"
+      img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
 
-.container.main-content
-  = outlet
+= outlet
 
-#footer
-  .container
-    .row
-      .col-md-7
-        p.text-muted &copy; Artypedia - by PaulLD
-      .col-md-5
-        p.text-muted Today is #{time}
+.fixed-bottom-left
+.absolute-bottom-right
+  p &nbsp;
+  p.text-muted
+    span.footer-text-left &copy; Artypedia - by PaulLD
+    span.footer-text-right Today is #{time}
+      

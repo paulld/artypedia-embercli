@@ -1,2 +1,7 @@
-h1 About us
-p Today is #{weekDay}, we are #{open}
+.fixed-column-top-left
+.fixed-column-left
+
+.container-fluid
+  .main-content
+    h1 About us
+    p Today is #{weekDay}, we are #{open}
