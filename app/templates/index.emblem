@@ -1,30 +1,49 @@
-.col-lg-2.col-md-2.col-sm-3.col-xs-3.wrapper-col
-  aside#aside-left
-    p &nbsp;
+.fixed-column-left
+  
+.container-fluid
+  .main-content
+    .row
+      .col-md-10
+        h1.sr-only Welcome to Artypedia
 
-.col-lg-10.col-md-10.col-sm-9.col-xs-9.wrapper-col
-  main#main.main-content
-    h1 Welcome to Artypedia
-    p This App was created using Ember-CLI
-    p Languages used include EmberScript, Emblem and Stylus
+        p &nbsp;
+        p
+          span.title-artypedia Artypedia 
+          | is an open-source project that aims at making 
+          span.title-artypedia art 
+          | more accessible to everyone. Your help is precious.
+        p
+          | You can 
+          a href="https://github.com/paulld/artypedia-embercli.git" fork 
+          | this project to suggest contributions.
+        p &nbsp;
+        p
+          | This web app was created using 
+          a href="https://github.com/paulld/artypedia-embercli.git" Ember-CLI
+        p
+          | Languages used include 
+          a href="http://emberscript.com/" EmberScript
+          | , 
+          a href="http://emblemjs.com/" Emblem 
+          | and 
+          a href="http://learnboost.github.io/stylus/" Stylus
+        p &nbsp;
     .row
       .col-md-5
         h2 = link-to 'works' | Artworks
         p There are <strong>#{totalWorks} artworks</strong> currently listed in our database.
-        p = link-to 'works' tagName="button" classNames="btn btn-primary" | See the #{totalWorks} Artworks 
         p &nbsp;
-        h4 Most viewed Artworks:
-        ul
-          each workViewCount
-            li =link-to 'work' this | title"#{title}"
-              (#{workViewCount})
+        / h4 Most viewed Artworks:
+        / ul
+          / each workViewCount
+            / li =link-to 'work' this | title"#{title}"
+              / (#{workViewCount})
         
       .col-md-5
         h2 = link-to 'artists' | Artists
-        p There are <strong>#{totalArtists} artists</strong> currently listedin our database.
-        p = link-to 'artists' tagName="button" classNames="btn btn-primary" | See the #{totalArtists} Artists
+        p There are <strong>#{totalArtists} artists</strong> currently listed in our database.
         p &nbsp;
-        h4 Most viewed Artists:
-        ul
-          each artistViewCount
-            li #{name}
+        / h4 Most viewed Artists:
+        / ul
+          / each artistViewCount
+            / li #{name}

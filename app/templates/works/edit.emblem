@@ -1,9 +1,8 @@
-.col-lg-2.col-md-2.col-sm-3.col-xs-3.wrapper-col
-  aside#aside-left
-    p &nbsp;
+.fixed-column-top-left
+.fixed-column-left
 
-.col-lg-10.col-md-10.col-sm-9.col-xs-9.wrapper-col
-  main#main.main-content
+.container-fluid
+  .main-content
     p this is the EDIT page for #{title}
     p
       link-to 'works.show' this | Back to #{title}

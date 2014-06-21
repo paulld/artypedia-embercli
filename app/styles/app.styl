@@ -8,17 +8,7 @@ body
   /* Margin bottom by footer height */
   margin-bottom 80px
   margin-top 80px
-
-#footer
-  position absolute
-  bottom 0
-  width 100%
-  /* Set the fixed height of the footer here */
-  height 80px
-  background-color #f6f6f6
-
-// /* Custom page CSS
-// -------------------------------------------------- */
+  height 100%
 
 body > .container
   padding 60px 15px 0
@@ -27,44 +17,112 @@ body > .container
   margin 20px 0
 
 
+// ORGANISE THE BLOCKS
 // --------------------------------------------------
 
-.main-container
+.fixed-top-left
+  position fixed
+  top 0
+  left 0
+  width 240px
+  height 80px
+  z-index 1130
+  background-color #f6f6f6
+  background-image linear-gradient(#fff 42%, #f6f6f6 100%)
+
+
+.fixed-top-right
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 80px
+  z-index 900
+  background-color #f6f6f6
+  background-image linear-gradient(#fff 42%, #f6f6f6 100%)
+  border-bottom 1px solid #a7d7f9
+  
+.fixed-column-top-left
+  position fixed
+  top 80px
+  left 0
+  width 240px
+  height 100px
+  z-index 1001
   background-color #f6f6f6
 
-.main-content
-  // margin-top 52px
-  padding 8%
-  border-left 1px solid #a7d7f9
-  background-color #fff
-
-.wrapper-col
+.fixed-column-left
+  position fixed
+  top 80px
+  left 0
+  bottom 80px
+  width 241px
+  height 100%
+  z-index 1000
+  display block
+  //padding 20px
+  overflow-x hidden
+  overflow-y auto
+  background-color #f6f6f6
+  border-right 1px solid #a7d7f9
   padding 0
 
-// .wrapper-nav
-//   padding-bottom -1px
-//   border-bottom 1px solid #ddd
+.fixed-bottom-left
+  position fixed
+  left 0
+  bottom 0
+  width 240px
+  height 80px
+  z-index 1200
+  background-color #f6f6f6
+    
+.absolute-bottom-right
+  position absolute
+  left 0
+  bottom 0
+  width 100%
+  height 80px
+  z-index 1000
+  background-color #f6f6f6
+  border-top 1px solid #a7d7f9
+
+.main-content
+  padding 25px
+  padding-left 265px
+  background-color #fff
+  height 100%
+
+
+// NAVBARS
+// --------------------------------------------------
 
 .navbar-default
   background-color #f6f6f6
   background-image linear-gradient(#fff 42%, #f6f6f6 100%)
   border 0
 
-.footer-right
-  text-align right
-  padding 25px
-  border-top 1px solid #a7d7f9
 
-.footer-left
-  text-align center
-  padding 25px 25px 0 0
+.wrapper-col
+  padding 0
+
+.list-group
+  margin-bottom 0
+
+// .wrapper-nav
+//   padding-bottom -1px
+//   border-bottom 1px solid #ddd
+
+
+.footer-text-right
+  padding-left 560px
+
+.footer-text-left
+  padding-left 260px
 
 .nagivation-top
   border-bottom 1px solid #a7d7f9
   height 80px
   padding-left 0
-
-
 
 .fixed-top
   position fixed
@@ -76,6 +134,7 @@ body > .container
   background-color #f6f6f6
   background-image linear-gradient(#fff 42%, #f6f6f6 100%)
 
+/*
 .grand-title
   text-align center
   padding-top 30px
@@ -93,6 +152,25 @@ body > .container
 .grand-title > a:hover, .grand-title > a:focus
   text-decoration none
 
+
+// IN EMBLEM:
+.grand-title
+  a ArtypediA
+*/
+
+.title-artypedia
+  font-family 'Gilda Display', serif
+  color #5e5e5e
+  text-align center
+  font-size 1.2em
+
+.grand-logo
+  text-align center
+  padding-top 10px
+  padding-bottom 0
+
+.artypedia-logo
+  display inline
 
 
 // OTHERS CUSTOM STYLES
@@ -135,6 +213,7 @@ a.active
 
 
 .navbar-top
+  margin-left 240px
   margin-top 38px
   border-bottom 1px solid #a7d7f9
 
@@ -170,6 +249,5 @@ a.navbar-link-top.active
 
 
 .register-new
-  margin 20px 0 25px
+  margin 135px 0 20px
   font-style italic
-

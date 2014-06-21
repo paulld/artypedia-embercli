@@ -1,27 +1,20 @@
-.fixed-top
-  .container-fluid
-    .row
-      .col-lg-2.col-md-2.col-sm-3.col-xs-3
-        .grand-title
-          a ArtypediA
-      .col-lg-10.col-md-10.col-sm-9.col-xs-9.nagivation-top
-        
-        ul.nav.navbar-top
-          li = link-to 'artists' class='navbar-link-top' | Artists
-          li = link-to 'works' class='navbar-link-top' | Artworks
-          li = link-to 'about' class='navbar-link-top' | About
-          li = link-to 'credits' class='navbar-link-top' | Credits
-          a href="https://github.com/paulld/artypedia-embercli.git"
-            img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
+.fixed-top-left
+  .grand-logo
+    img.artypedia-logo src="/assets/images/artypedia.png"
+.fixed-top-right
+  ul.nav.navbar-top
+    li = link-to 'index' class='navbar-link-top' | About
+    li = link-to 'artists' class='navbar-link-top' | Artists
+    li = link-to 'works' class='navbar-link-top' | Artworks
+    a href="https://github.com/paulld/artypedia-embercli.git"
+      img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
 
-.container-fluid
-  .row.main-container
-    = outlet
+= outlet
 
-  #footer.row
-    .col-lg-2.col-md-2.col-sm-2.col-xs-3.wrapper-col
-      .footer-left
-        p.text-muted &copy; Artypedia - by PaulLD
-    .col-lg-10.col-md-10.col-sm-10.col-xs-9.wrapper-col
-      .footer-right
-        p.text-muted Today is #{time}
+.fixed-bottom-left
+.absolute-bottom-right
+  p &nbsp;
+  p.text-muted
+    span.footer-text-left &copy; Artypedia - by PaulLD
+    span.footer-text-right Today is #{time}
+      
