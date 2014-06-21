@@ -26,19 +26,10 @@ body > .container
 .container .text-muted
   margin 20px 0
 
-#footer > .container
-  padding-right 15px
-  padding-left 15px
 
-code
-  font-size 80%
-
-
-/* CUSTOM STYLES - MAIN 
--------------------------------------------------- */
+// --------------------------------------------------
 
 .main-container
-  // padding-right -15px
   background-color #f6f6f6
 
 .main-content
@@ -113,6 +104,8 @@ a.active
   border 1px solid #ddd
   border-bottom-color transparent
 
+
+
 .new-comment-text
   color #999
 
@@ -149,7 +142,11 @@ a.active
   float left
   margin-bottom -1px
 
-.navbar-top > li.active > a, .navbar-top > li.active > ahover, .navbar-top > li.active > afocus
+.navbar-top > li > a:hover, .navbar-top > li > a:focus
+  text-decoration none
+  background-color #fff
+
+a.navbar-link-top.active
   color #555
   cursor default
   background-color #fff
@@ -157,15 +154,14 @@ a.active
   border-bottom-color transparent
   border-top-color transparent
 
+
+
 .nav-sidebar > li > a
   margin-right 2px
   line-height 1.42857143
   border 1px solid transparent
   border-radius 4px 4px 0 0
-
-.nav-sidebar > li > a
-  padding-right 20px
-  padding-left 20px
+  padding 5px 20px
 
 .nav-sidebar > .active > a
   color #fff
@@ -174,5 +170,6 @@ a.active
 
 
 .register-new
-  margin 20px 0 30px
+  margin 20px 0 25px
+  font-style italic
 
