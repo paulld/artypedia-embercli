@@ -7,9 +7,9 @@
       = link-to 'artists.edit' this tagName="button" classNames="btn btn-info btn-margin-left30" | Edit
     p &nbsp;
 .row
-  .col-md-3
+  .col-md-4
     img.img-thumbnail src=image alt=name
-  .col-md-6
+  .col-md-7
     p.product-description <strong>Nationality:</strong> #{nationality}
     p.product-description <strong>Born on:</strong> #{bornOn}
     p.product-description <strong>Died on:</strong> #{diedOn}

@@ -7,7 +7,6 @@ html
 body
   /* Margin bottom by footer height */
   margin-bottom 80px
-  margin-top 80px
 
 #footer
   position absolute
@@ -16,6 +15,7 @@ body
   /* Set the fixed height of the footer here */
   height 80px
   background-color #f6f6f6
+  padding-top 15px
 
 // /* Custom page CSS
 // -------------------------------------------------- */
@@ -38,69 +38,81 @@ code
 -------------------------------------------------- */
 
 .main-container
-  // padding-right -15px
+  padding-right -15px
   background-color #f6f6f6
 
 .main-content
-  // margin-top 52px
-  padding 8%
-  border-left 1px solid #a7d7f9
+  margin-top 52px
+  padding 40px
+  border 1px solid #a7d7f9
+  border-right-width 0px
   background-color #fff
-
-.wrapper-col
-  padding 0
-
-// .wrapper-nav
-//   padding-bottom -1px
-//   border-bottom 1px solid #ddd
 
 .navbar-default
   background-color #f6f6f6
-  background-image linear-gradient(#fff 42%, #f6f6f6 100%)
+  background-image linear-gradient(#fff 50%, #f6f6f6 100%)
   border 0
 
 .footer-right
   text-align right
-  padding 25px
-  border-top 1px solid #a7d7f9
 
 .footer-left
   text-align center
-  padding 25px 25px 0 0
 
-.nagivation-top
-  border-bottom 1px solid #a7d7f9
-  height 80px
-  padding-left 0
+.wrapper-col
+  padding 0
 
+.wrapper-nav
+  padding-bottom -1px
+  border-bottom 1px solid #ddd
 
-
-.fixed-top
-  position fixed
-  top 0
-  right 0
-  left 0
-  z-index 1030
-  height 80px
-  background-color #f6f6f6
-  background-image linear-gradient(#fff 42%, #f6f6f6 100%)
 
 .grand-title
   text-align center
-  padding-top 30px
+  padding-top 7px
   padding-bottom 0
 
 .grand-title > a
-  font-size 38px
+  font-size 32px
   font-family 'Gilda Display', serif
   color #5e5e5e
   text-align center
 
 .grand-title > a:focus
-  color #9f9f9f
+  color #5e5e5e
 
 .grand-title > a:hover, .grand-title > a:focus
   text-decoration none
+
+//
+
+// html, body, #wrapper
+//   height 100%
+//   margin 0
+//   padding 0
+
+// #wrapper
+//   position relative
+
+// #top, #middle, #bottom
+//   position absolute
+
+// #top
+//   top 0
+//   height 50px
+//   width 100%
+//   background grey
+// #middle
+//   top 50px
+//   bottom 50px
+//   width 100%
+//   background black
+// #bottom
+//   bottom 0
+//   height 50px
+//   width 100%
+//   background grey
+
 
 
 
@@ -139,40 +151,3 @@ a.active
 .btn-margin-top10-bottom10
   margin-top 20px
   margin-bottom 20px
-
-
-.navbar-top
-  margin-top 38px
-  border-bottom 1px solid #a7d7f9
-
-.navbar-top > li
-  float left
-  margin-bottom -1px
-
-.navbar-top > li.active > a, .navbar-top > li.active > ahover, .navbar-top > li.active > afocus
-  color #555
-  cursor default
-  background-color #fff
-  border 1px solid #a7d7f9
-  border-bottom-color transparent
-  border-top-color transparent
-
-.nav-sidebar > li > a
-  margin-right 2px
-  line-height 1.42857143
-  border 1px solid transparent
-  border-radius 4px 4px 0 0
-
-.nav-sidebar > li > a
-  padding-right 20px
-  padding-left 20px
-
-.nav-sidebar > .active > a
-  color #fff
-  background-color #428bca
-  border 0
-
-
-.register-new
-  margin 20px 0 30px
-
