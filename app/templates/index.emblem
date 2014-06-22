@@ -8,25 +8,30 @@
 
         p &nbsp;
         p
-          span.title-artypedia Artypedia 
+          span.artypedia-title Artypedia 
           | is an open-source project that aims at making 
-          span.title-artypedia art 
+          span.artypedia-title art 
           | more accessible to everyone. Your help is precious.
         p
           | You can 
-          a href="https://github.com/paulld/artypedia-embercli.git" fork 
-          | this project to suggest contributions.
+          a href="https://github.com/paulld/artypedia-embercli.git" fork
+          |  this project to suggest contributions.
         p &nbsp;
         p
-          | This web app was created using 
+          | This web app was created using the 
+          %b
+            a href="http://emberjs.com/" Ember.js
+          |  framework and the 
           a href="https://github.com/paulld/artypedia-embercli.git" Ember-CLI
+          |  executable
         p
           | Languages used include 
           a href="http://emberscript.com/" EmberScript
-          | , 
-          a href="http://emblemjs.com/" Emblem 
-          | and 
+          |  (= CoffeeScript + Ember), 
+          a href="http://emblemjs.com/" Emblem
+          |  (similar as Slim) and 
           a href="http://learnboost.github.io/stylus/" Stylus
+          |  (CSS slimer)
         p &nbsp;
     .row
       .col-md-5

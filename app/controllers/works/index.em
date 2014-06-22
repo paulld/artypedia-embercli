@@ -1,5 +1,5 @@
 class WorksIndexController extends Ember.ArrayController
-  sortProperties: ['price']
-  sortAscending: false
+  sortProperties: ['title']
+  sortAscending: true
 
 `export default WorksIndexController`

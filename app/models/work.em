@@ -3,7 +3,6 @@ class Work extends DS.Model
   price:         DS.attr 'number'
   type:          DS.attr 'string'
   description:   DS.attr 'string'
-  isOnSale:      DS.attr 'boolean'
   workViewCount: DS.attr 'number'
   image:         DS.attr 'string'
   author:        DS.belongsTo 'artist', async: true
@@ -30,10 +29,9 @@ Work.reopenClass
       varius ut. Sed eget augue odio. Donec ac tortor eget nulla rutrum
       ullamcorper. Curabitur vestibulum tortor elit, vitae pretium eros mollis
       sed.'
-      isOnSale: false
       workViewCount: 10
       image: 'assets/images/picasso-guernica.jpg'
-      author: 100
+      author: 1000
       ratings: []
     }
     {
@@ -47,10 +45,9 @@ Work.reopenClass
       mattis vitae quam. Aenean arcu ipsum, dapibus ut suscipit eu, ultrices eget
       sapien. Vestibulum sollicitudin tellus nisl, eu vulputate erat laoreet non.
       Proin euismod et ipsum id molestie.'
-      isOnSale: false
       workViewCount: 100
       image: 'assets/images/picasso-avignon.jpg'
-      author: 100
+      author: 1000
       ratings: [2]
     }
     {
@@ -72,10 +69,9 @@ Work.reopenClass
       pharetra faucibus, augue mauris tincidunt enim, quis condimentum nisi nulla
       nec tortor. Mauris vehicula consequat nisi, aliquet placerat enim porta non.
       Proin ante augue, luctus ac auctor eu, vestibulum eget augue.'
-      isOnSale: false
       workViewCount: 1
       image: 'assets/images/picasso-blue-nude.jpg'
-      author: 100
+      author: 1000
       ratings: [1]
     }
     {
@@ -89,10 +85,9 @@ Work.reopenClass
       dui. Cras non condimentum purus. Nam volutpat venenatis tortor. Donec a
       sapien non lectus sagittis iaculis. Morbi ut elit scelerisque, lacinia urna
       quis, pulvinar libero.'
-      isOnSale: true
       workViewCount: 5
       image: 'assets/images/dali-grand-masturbateur.png'
-      author: 101
+      author: 1001
     }
     {
       id: '5'
@@ -105,10 +100,9 @@ Work.reopenClass
       dui. Cras non condimentum purus. Nam volutpat venenatis tortor. Donec a
       sapien non lectus sagittis iaculis. Morbi ut elit scelerisque, lacinia urna
       quis, pulvinar libero.'
-      isOnSale: false
       workViewCount: 8
       image: 'assets/images/dali-profile-of-time.jpg'
-      author: 101
+      author: 1001
       ratings: [1,5]
     }
     {
@@ -122,10 +116,9 @@ Work.reopenClass
       dui. Cras non condimentum purus. Nam volutpat venenatis tortor. Donec a
       sapien non lectus sagittis iaculis. Morbi ut elit scelerisque, lacinia urna
       quis, pulvinar libero.'
-      isOnSale: true
       workViewCount: 108
       image: 'assets/images/dali-persistance-memoire.jpg'
-      author: 101
+      author: 1001
       ratings: [5,5,4]
     }
     {
@@ -139,10 +132,9 @@ Work.reopenClass
       dui. Cras non condimentum purus. Nam volutpat venenatis tortor. Donec a
       sapien non lectus sagittis iaculis. Morbi ut elit scelerisque, lacinia urna
       quis, pulvinar libero.'
-      isOnSale: true
       workViewCount: 95
       image: 'assets/images/magritte-trahison-images.jpg'
-      author: 102
+      author: 1002
       ratings: [3,4,2]
     }
     {
@@ -156,10 +148,9 @@ Work.reopenClass
       dui. Cras non condimentum purus. Nam volutpat venenatis tortor. Donec a
       sapien non lectus sagittis iaculis. Morbi ut elit scelerisque, lacinia urna
       quis, pulvinar libero.'
-      isOnSale: true
       workViewCount: 118
       image: 'assets/images/magritte-fils-homme.jpg'
-      author: 102
+      author: 1002
       ratings: []
     }
   ]

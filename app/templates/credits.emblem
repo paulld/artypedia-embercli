@@ -1,9 +1,0 @@
-.fixed-column-top-left
-.fixed-column-left
-
-.container-fluid
-  .main-content
-    h1 Thank you for your help!
-    p
-      span.title-artypedia Artypedia 
-      | is an open-source project that aims at making art more accessible to everyone. Your help is precious. You can fork this project and suggest contributions.

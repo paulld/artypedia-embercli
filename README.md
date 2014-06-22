@@ -1,20 +1,20 @@
 Artypedia (Ember-cli)
 =========
 
-Artypedia is a simple App created with Ember.js framework,
-using the [ember-cli](https://github.com/stefanpenner/ember-cli) executable.
-It uses the following languages, in addition to JavaScript:
-* [EmberScript](http://emberscript.com/) (CoffeeScript + Ember)
+Artypedia is a project that aims at listing the modern and contemporary artist, and their related works.<br><br>
+Artypedia is a simple App created with **[Ember.js](http://emberjs.com/)** framework,
+using the **[ember-cli](https://github.com/stefanpenner/ember-cli)** executable by Stefan Penner.<br>
+Beside JavaScript, the following languages were used: 
+* [EmberScript](http://emberscript.com/) (= CoffeeScript + Ember)
 * [Emblem](http://emblemjs.com/)
 * [Stylus](http://learnboost.github.io/stylus/)
 
-### Getting Started
+Getting Started
+----------
 
 To clone this repository and make it work, you should run the following commands:
 ``` sh
-git clone https://github.com/paulld/artypedia-embercli.git
-cd artypedia-embercli
-cd ember-cli
+git clone https://github.com/paulld/artypedia-embercli.git && cd artypedia-embercli
 npm install
 bower install
 ```
