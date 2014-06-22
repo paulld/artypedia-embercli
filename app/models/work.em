@@ -33,7 +33,7 @@ Work.reopenClass
       isOnSale: false
       workViewCount: 10
       image: 'assets/images/picasso-guernica.jpg'
-      author: 100
+      author: 1000
       ratings: []
     }
     {
@@ -50,7 +50,7 @@ Work.reopenClass
       isOnSale: false
       workViewCount: 100
       image: 'assets/images/picasso-avignon.jpg'
-      author: 100
+      author: 1000
       ratings: [2]
     }
     {
@@ -75,7 +75,7 @@ Work.reopenClass
       isOnSale: false
       workViewCount: 1
       image: 'assets/images/picasso-blue-nude.jpg'
-      author: 100
+      author: 1000
       ratings: [1]
     }
     {
@@ -92,7 +92,7 @@ Work.reopenClass
       isOnSale: true
       workViewCount: 5
       image: 'assets/images/dali-grand-masturbateur.png'
-      author: 101
+      author: 1001
     }
     {
       id: '5'
@@ -108,7 +108,7 @@ Work.reopenClass
       isOnSale: false
       workViewCount: 8
       image: 'assets/images/dali-profile-of-time.jpg'
-      author: 101
+      author: 1001
       ratings: [1,5]
     }
     {
@@ -125,7 +125,7 @@ Work.reopenClass
       isOnSale: true
       workViewCount: 108
       image: 'assets/images/dali-persistance-memoire.jpg'
-      author: 101
+      author: 1001
       ratings: [5,5,4]
     }
     {
@@ -142,7 +142,7 @@ Work.reopenClass
       isOnSale: true
       workViewCount: 95
       image: 'assets/images/magritte-trahison-images.jpg'
-      author: 102
+      author: 1002
       ratings: [3,4,2]
     }
     {
@@ -159,7 +159,7 @@ Work.reopenClass
       isOnSale: true
       workViewCount: 118
       image: 'assets/images/magritte-fils-homme.jpg'
-      author: 102
+      author: 1002
       ratings: []
     }
   ]

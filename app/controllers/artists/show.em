@@ -1,9 +1,9 @@
 class ArtistsShowController extends Ember.ObjectController
 
-  # text: ''
+  text: ''
   # actions:
   #   createComment: ->
-  #     comment = @store.createRecord('comment',
+  #     comment = @store.createRecord('comment'
   #       text: @get('text')
   #       artist: @get('model')
   #       commentedAt: new Date()

@@ -1,7 +1,7 @@
 `import Work from 'ember-cli/models/work'`
 
-class WorksIndexRoute extends Ember.Route
+class IndexRoute extends Ember.Route
   model: ->
     @store.find(Work)
 
-`export default WorksIndexRoute`
+`export default IndexRoute`

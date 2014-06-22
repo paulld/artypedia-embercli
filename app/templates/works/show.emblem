@@ -1,20 +1,17 @@
-.fixed-column-top-left
-.fixed-column-left
-
-.container-fluid
-  .main-content
-    .row
-      .col-md-5
-        img.img-thumbnail src=image alt=title
-      .col-md-7
-        h2 = title
-        h4 
-          | Artist: 
-          link-to 'artists.show' | #{author.firstName} #{author.lastName}
-        p.product-description <strong>Type:</strong> #{type}
-        p.product-description <strong>Description:</strong> #{description}
-        p
-          link-to 'works.index' | Back to all Artworks
-          ' 
-          ' |
-          link-to 'works.edit' this | Edit
+.row
+  .col-lg-12
+    h1 = title
+.row
+  .col-md-6.col-sm-12
+    img.img-thumbnail src=image alt=title
+  .col-md-6.col-sm-12
+    h4 
+      | Artist: 
+      link-to 'artists.show' | #{author.firstName} #{author.lastName}
+    p.product-description <strong>Type:</strong> #{type}
+    p.product-description <strong>Description:</strong> #{description}
+    p
+      link-to 'works.index' | Back to all Artworks
+      ' 
+      ' |
+      link-to 'works.edit' this | Edit

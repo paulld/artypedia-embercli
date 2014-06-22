@@ -1,0 +1,13 @@
+.fixed-column-top-left
+.fixed-column-left
+  .list-group
+    ul.nav.nav-sidebar
+      li.register-new
+        link-to 'works.new' | Register a New Artwork
+      each
+        li = link-to 'works.show' id | #{title}
+
+
+.container-fluid
+  .main-content
+    = outlet

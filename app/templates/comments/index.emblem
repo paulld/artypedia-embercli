@@ -1,0 +1,7 @@
+ul
+  each
+    li = text
+  else
+    li
+      p.text-muted
+        <em>No comments yet. Be the first to comment on this artist!</em>
