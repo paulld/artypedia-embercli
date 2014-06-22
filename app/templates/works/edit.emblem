@@ -1,5 +1,4 @@
-p &nbsp;
-p this is the EDIT page for #{title}
+h1 Edit the page for #{title}
 p
   link-to 'works.show' this | Back to #{title}
   ' 

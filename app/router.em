@@ -10,7 +10,6 @@ Router.map ->
     @route "show",   { path: ':id'      }
     @route "new",    { path: 'new'      }
     @route "edit",   { path: ':id/edit' }
-    @route "onsale", { path: ':onsale'  }
   
   @resource 'artists', ->
     @route "index",  { path: ''         }

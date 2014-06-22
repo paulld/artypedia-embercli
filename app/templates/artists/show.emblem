@@ -13,21 +13,24 @@
     p = link-to 'artists.edit' this tagName="button" classNames="btn btn-info" | Edit #{firstName} #{lastName}
 / = render 'artist.works' works
 
-/ .row
-/   h2 Main Artworks
-/   ul
-/     each
-/       li link-to 'work' this #{title}
-/     else
-/       li
-/         p.text-muted <em>No artworks added yet. Be the first to add one for this artist!</em>
+.row
+  .col-md-12
+    h2 Main Artworks
+    ul
+      each works
+        li = link-to 'works.show' this | #{title}
+      else
+        li
+          p.text-muted
+            <em>No artworks added yet.</em><br>
+            = link-to 'works.new' | <em>Be the first to add one for this artist!</em>
+
 
 .row
   h2.col-md-12 Comments
 .row.new-review
   .col-md-7.col-sm-9.form-group
     = textarea valueBinding='text' id='comment-text-area' classNames='form-control' placeholder='Add a comment'
-    / <textarea #{valueBinding 'text'} id='comment-text-area' classNames='form-control' placeholder='Add a comment'>
   .col-md-2.col-sm-3.form-group
     <button #{action 'createComment'} class='btn btn-primary'>Send</button>
       

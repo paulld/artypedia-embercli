@@ -1,4 +1,3 @@
-p &nbsp;
-p Register a new Artwork
-p
-  link-to 'works.index' | Back to all Artworks
+h1 Register a new Artwork
+/ p
+/   link-to 'works.index' | Back to all Artworks
