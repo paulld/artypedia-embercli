@@ -15,6 +15,7 @@
 .absolute-bottom-right
   p &nbsp;
   p.text-muted
-    span.footer-text-left &copy; Artypedia - by PaulLD
-    span.footer-text-right Today is #{time}
+    span.footer-text-left &copy; Artypedia #{year} - by 
+    a.text-muted href="http://www.paulld.com" PaulLD
+    / span.footer-text-right Today is #{time}
       
