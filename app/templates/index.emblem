@@ -11,27 +11,28 @@
           span.artypedia-title Artypedia 
           | is an open-source project that aims at making 
           span.artypedia-title art 
-          | more accessible to everyone. Your help is precious.
+          | more accessible to everyone.
         p
           | You can 
-          a href="https://github.com/paulld/artypedia-embercli.git" fork
-          |  this project to suggest contributions.
+          a href="https://github.com/paulld/artypedia-embercli.git" fork 
+          | this project to suggest contributions.
+        p The next iterations will allow contributing new artists and artworks, and will introduce filters of artists by type, movement, period, etc.
         p &nbsp;
         p
           | This web app was created using the 
           %b
             a href="http://emberjs.com/" Ember.js
           |  framework and the 
-          a href="https://github.com/paulld/artypedia-embercli.git" Ember-CLI
+          a href="http://www.ember-cli.com/" Ember-CLI
           |  executable
         p
           | Languages used include 
           a href="http://emberscript.com/" EmberScript
-          |  (= CoffeeScript + Ember), 
+          |  (Ember.js-infused CoffeeScript), 
           a href="http://emblemjs.com/" Emblem
-          |  (similar as Slim) and 
+          |  (templating language for Ember.js, alternative for Slim and Handlebars.js) and 
           a href="http://learnboost.github.io/stylus/" Stylus
-          |  (CSS slimer)
+          |  (CSS preprocessor)
         p &nbsp;
     .row
       .col-md-5
